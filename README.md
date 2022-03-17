@@ -25,18 +25,21 @@ PIL,Opencv
 
 -> The msb contributes the maximum to the color pixel and the lsb the least.
 
--> Hence in this lsb Algorithm we are going to hide secret image in cover by replacing the lsb of the cover image with the bits of the secret image.
+-> Hence in this lsb Algorithm we are going to hide secret image in cover by replacing the lsb of the cover image with the bits of the 
+   secret image.
 
 -> The encoded image won't change as the lsb has been changed which contributes the least to the color.
 
 --Encode
+
 -> We will specify a variable n_bits denoting how many lsb's should be replaced in the cover image
 
 -> We will check a condition that if Total pixels of the secret_image * (8/n_bits) < Total pixels of cover_image
 
 -> If the above is true only then hiding is possible else the secret image isn't small enough.
 
--> Then according to the value of n_bits we will replace that many lsb bits  of the cover image with the bits of secret image
+-> Then according to the value of n_bits we will replace that many lsb bits  of the cover image with the bits of 
+   secret image
 
 -> We will continue till all the bits of secret image are stored in cover image
 
@@ -44,7 +47,8 @@ PIL,Opencv
 
 -> We just have to retreive the secret image by getting the lsb values of pixels from the cover image.
 
--> Depending on the value of n_bits used 8/n_bits tells us that for hiding one pixel in secret image how many pixels were are required from the cover image.
+-> Depending on the value of n_bits used 8/n_bits tells us that for hiding one pixel in secret image how many pixels were are required from 
+   the cover image.
 
 -> According we have to generate one pixel from 8/n_bits pixels of cover image
 
